@@ -1,0 +1,53 @@
+.about{
+    padding: 5rem 3rem 3rem 3rem;
+    background: #fff;
+}
+.row{
+    display:flex;
+    justify-content: space-around;
+}
+.row .column{
+    width:40%;
+}
+.about-img{
+    position: relative;
+    background-image: url("../images/intro-bg3.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height:600px;
+    width:100%;
+}
+.about-content{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.about-content h2{
+    font-size:40px;
+    font-weight:700;
+    line-height: 1.4;
+    margin-bottom:1rem;
+}
+.about-content p{
+    padding-bottom: 1rem;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color:blue;
+}
+
+@media screen and (max-width:768px){
+    .about{
+        padding: 2rem 1rem 3rem 1rem;
+    }
+    .row{
+        display:flex;
+        flex-direction: column;
+    }
+    .about-img{
+        height:500px;
+    }
+    .row .column{
+        width:100%;
+    }
+}
