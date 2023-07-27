@@ -5,11 +5,10 @@ import App from './App';
 
 import { BrowserRouter } from "react-router-dom";
 
-const homepage = process.env.PUBLIC_URL || '/';
-ReactDOM.render(
-  <BrowserRouter basename={homepage}>
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <BrowserRouter>
     <App />
-  </BrowserRouter>,
-  document.getElementById('root')
+  </BrowserRouter>
 );
 
